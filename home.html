@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerVibe | Find Best Jobs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="home.html" class="logo">CareerVibe</a> <!-- First row -->
+
+        <div class="navbar-row">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="find-jobs.php">Find Jobs</a></li>
+                <li><a href="post-job.php">Post a Job</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+    
+            <div class="auth-buttons">
+                <a href="login.php" class="loginapp">Login</a>
+                <a href="signup.php" class="regapp">Sign Up</a>
+                <a href="logout.php" class="logoutapp">Logout</a> <!-- Logout button -->
+                <a href="profile.php" class="profile-icon">
+                    <img src="profile image.webp" alt="Profile Icon" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Find Your Dream Job</h1>
+        <p>Explore thousands of job opportunities from top companies.</p>
+        <form action="find-jobs.php" method="get" class="job-search-form">
+            <input type="text" name="keyword" placeholder="Job title, keywords..." />
+            <input type="text" name="location" placeholder="Location" />
+            <button type="submit" class="btn btn-primary">Search Jobs</button>
+        </form>
+          
+      </div>
+    </section>
+    <section class="featured-jobs">
+        <div class="container">
+          <h2>Featured Jobs</h2>
+          <div class="job-list">
+            <div class="job-item">
+              <h3>Software Engineer</h3>
+              <p>Google | Mountain View, CA</p>
+              <a href="job-details.php?job_id=1" class="btn btn-outline">View Job</a>
+            </div>
+            <div class="job-item">
+              <h3>Data Analyst</h3>
+              <p>Facebook | Menlo Park, CA</p>
+              <a href="job-details.php?job_id=2" class="btn btn-outline">View Job</a>
+            </div>
+            <div class="job-item">
+              <h3>UX Designer</h3>
+              <p>Apple | Cupertino, CA</p>
+              <a href="job-details.php?job_id=3" class="btn btn-outline">View Job</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <footer>
+      <div class="container">
+        <p>© 2024 CareerVibe, All Rights Reserved</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
